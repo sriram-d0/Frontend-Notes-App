@@ -1,0 +1,130 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #658118, #00f2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+header {
+  background: linear-gradient(45deg, #007bff, #5bc0de);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: #f7f9fc;
+  border-bottom: 1px solid #e4e9ef;
+}
+
+.editor-toolbar button,
+.editor-toolbar select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.editor-area {
+  margin: 10px 10px;
+  padding: 20px;
+  min-height: 300px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  
+  overflow-y: auto;
+}
+
+.actions button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left:10px;
+}
+
+#notesList {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+
+#notesList li {
+  background: #f7f9fc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#notesList li .note-content{
+  flex: 1;
+  word-wrap: break-word;
+}
+
+#notesList li .actions{
+  display: flex;
+  gap:10px;
+}
+#notesList li.pinned {
+  background: #ffe680;
+}
+
+#notesList button{
+  padding: 5px 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 10px;
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
